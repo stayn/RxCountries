@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountryTableViewCell" customModule="Countries" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countryCell" rowHeight="72" id="R0u-gR-sdY" customClass="CountryTableViewCell" customModule="Countries" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R0u-gR-sdY" id="XmO-0c-f2A">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5k-B4-cdW">
+                        <rect key="frame" x="16" y="11" width="343" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDC-iM-DCh">
+                        <rect key="frame" x="16" y="40" width="343" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.43002068043508379" blue="0.2475913072403596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PDC-iM-DCh" firstAttribute="leading" secondItem="XmO-0c-f2A" secondAttribute="leadingMargin" id="Bq4-Ld-vr6"/>
+                    <constraint firstItem="PDC-iM-DCh" firstAttribute="bottom" secondItem="XmO-0c-f2A" secondAttribute="bottomMargin" id="LsX-Ai-34x"/>
+                    <constraint firstItem="PDC-iM-DCh" firstAttribute="top" secondItem="a5k-B4-cdW" secondAttribute="bottom" constant="8" id="ZpX-Bo-EjJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="a5k-B4-cdW" secondAttribute="trailing" id="e4t-Q8-7j1"/>
+                    <constraint firstItem="a5k-B4-cdW" firstAttribute="leading" secondItem="XmO-0c-f2A" secondAttribute="leadingMargin" id="pQq-nG-H7V"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PDC-iM-DCh" secondAttribute="trailing" id="uUZ-ow-qkk"/>
+                    <constraint firstItem="a5k-B4-cdW" firstAttribute="top" secondItem="XmO-0c-f2A" secondAttribute="topMargin" id="vfp-IY-mPw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countryNameLabel" destination="a5k-B4-cdW" id="Jqs-Of-dA5"/>
+                <outlet property="populationLabel" destination="PDC-iM-DCh" id="lPM-TV-1CR"/>
+            </connections>
+            <point key="canvasLocation" x="48.5" y="11"/>
+        </tableViewCell>
+    </objects>
+</document>
