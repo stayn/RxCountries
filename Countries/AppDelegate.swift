@@ -28,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .subscribe()
             .disposed(by: disposeBag)
         
-        // comment to smthasdda
         return true
     }
 
