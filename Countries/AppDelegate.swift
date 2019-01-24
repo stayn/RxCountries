@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .subscribe()
             .disposed(by: disposeBag)
         
+        // comment
         return true
     }
 
